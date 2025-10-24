@@ -8,14 +8,20 @@
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
     "format": "prettier --write .",
-    "format:check": "prettier --check ."
+    "format:check": "prettier --check .",
+    "db:generate": "drizzle-kit generate",
+    "db:migrate": "drizzle-kit migrate",
+    "db:studio": "drizzle-kit studio"
   },
   "keywords": [],
   "type": "module",
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@neondatabase/serverless": "^1.0.2",
     "dotenv": "^17.2.3",
+    "drizzle-kit": "^0.31.5",
+    "drizzle-orm": "^0.44.7",
     "express": "^5.1.0"
   },
   "devDependencies": {
