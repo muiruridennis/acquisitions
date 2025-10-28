@@ -1,0 +1,249 @@
+{"level":"info","message":"Hello from Acquisitions!","service":"acquisitions-api","timestamp":"2025-10-24T11:15:59.408Z"}
+{"level":"info","message":"Hello from Acquisitions!","service":"acquisitions-api","timestamp":"2025-10-24T11:17:56.856Z"}
+{"level":"info","message":"::1 - - [24/Oct/2025:11:17:56 +0000] \"GET / HTTP/1.1\" 304 - \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36\"","service":"acquisitions-api","timestamp":"2025-10-24T11:17:56.871Z"}
+{"level":"info","message":"::1 - - [24/Oct/2025:11:17:57 +0000] \"GET /favicon.ico HTTP/1.1\" 404 150 \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36\"","service":"acquisitions-api","timestamp":"2025-10-24T11:17:57.346Z"}
+{"level":"info","message":"Hello from Acquisitions!","service":"acquisitions-api","timestamp":"2025-10-24T12:47:11.580Z"}
+{"level":"info","message":"::1 - - [24/Oct/2025:12:47:11 +0000] \"GET / HTTP/1.1\" 200 24 \"-\" \"HTTPie\"","service":"acquisitions-api","timestamp":"2025-10-24T12:47:11.585Z"}
+{"level":"info","message":"::1 - - [24/Oct/2025:12:50:16 +0000] \"POST /api/auth/sign-up HTTP/1.1\" 404 156 \"-\" \"HTTPie\"","service":"acquisitions-api","timestamp":"2025-10-24T12:50:16.242Z"}
+{"level":"info","message":"::1 - - [24/Oct/2025:14:56:16 +0000] \"POST /api/auth/sign-up HTTP/1.1\" 404 27 \"-\" \"HTTPie\"","service":"acquisitions-api","timestamp":"2025-10-24T14:56:16.837Z"}
+{"level":"info","message":"::1 - - [24/Oct/2025:14:59:20 +0000] \"POST /api/auth/sign-up HTTP/1.1\" 400 92 \"-\" \"HTTPie\"","service":"acquisitions-api","timestamp":"2025-10-24T14:59:20.594Z"}
+{"level":"info","message":"::1 - - [24/Oct/2025:15:01:28 +0000] \"POST /api/auth/sign-up?name=Dennis&email=dennisdennoh62%40gmail.com&password=1234 HTTP/1.1\" 400 92 \"-\" \"HTTPie\"","service":"acquisitions-api","timestamp":"2025-10-24T15:01:28.112Z"}
+{"level":"info","message":"::1 - - [24/Oct/2025:15:02:46 +0000] \"POST /api/auth/sign-up HTTP/1.1\" 400 91 \"-\" \"HTTPie\"","service":"acquisitions-api","timestamp":"2025-10-24T15:02:46.603Z"}
+{"level":"info","message":"User dennisdennoh62@gmail.com created successfully","service":"acquisitions-api","timestamp":"2025-10-24T15:03:20.318Z"}
+{"level":"info","message":"User registered successfully: dennisdennoh62@gmail.com","service":"acquisitions-api","timestamp":"2025-10-24T15:03:20.324Z"}
+{"level":"info","message":"::1 - - [24/Oct/2025:15:03:20 +0000] \"POST /api/auth/sign-up HTTP/1.1\" 201 110 \"-\" \"HTTPie\"","service":"acquisitions-api","timestamp":"2025-10-24T15:03:20.328Z"}
+{"level":"info","message":"::1 - - [24/Oct/2025:15:06:21 +0000] \"GET /api/users HTTP/1.1\" 401 72 \"-\" \"HTTPie\"","service":"acquisitions-api","timestamp":"2025-10-24T15:06:21.824Z"}
+{"level":"info","message":"::1 - - [24/Oct/2025:15:09:29 +0000] \"POST /api/auth/signIn HTTP/1.1\" 404 27 \"-\" \"HTTPie\"","service":"acquisitions-api","timestamp":"2025-10-24T15:09:29.322Z"}
+{"level":"info","message":"::1 - - [24/Oct/2025:15:11:00 +0000] \"POST /api/auth/signIn HTTP/1.1\" 404 27 \"-\" \"HTTPie\"","service":"acquisitions-api","timestamp":"2025-10-24T15:11:00.747Z"}
+{"level":"error","message":"Error authenticating user: Error: Invalid password","service":"acquisitions-api","timestamp":"2025-10-24T15:11:34.516Z"}
+{"level":"error","message":"Sign in error Invalid password","service":"acquisitions-api","stack":"Error: Invalid password\n    at authenticateUser (file:///D:/acquisations/src/services/auth.service.js:75:13)\n    at async signIn (file:///D:/acquisations/src/controllers/auth.controller.js:65:18)","timestamp":"2025-10-24T15:11:34.517Z"}
+{"level":"info","message":"::1 - - [24/Oct/2025:15:11:34 +0000] \"POST /api/auth/sign-in HTTP/1.1\" 401 31 \"-\" \"HTTPie\"","service":"acquisitions-api","timestamp":"2025-10-24T15:11:34.518Z"}
+{"level":"info","message":"User dennisdennoh62@gmail.com authenticated successfully","service":"acquisitions-api","timestamp":"2025-10-24T15:11:42.940Z"}
+{"level":"info","message":"User signed in successfully: dennisdennoh62@gmail.com","service":"acquisitions-api","timestamp":"2025-10-24T15:11:42.943Z"}
+{"level":"info","message":"::1 - - [24/Oct/2025:15:11:42 +0000] \"POST /api/auth/sign-in HTTP/1.1\" 200 122 \"-\" \"HTTPie\"","service":"acquisitions-api","timestamp":"2025-10-24T15:11:42.945Z"}
+{"level":"info","message":"::1 - - [24/Oct/2025:15:11:54 +0000] \"GET /api/users HTTP/1.1\" 401 72 \"-\" \"HTTPie\"","service":"acquisitions-api","timestamp":"2025-10-24T15:11:54.904Z"}
+{"level":"info","message":"::1 - - [24/Oct/2025:15:12:32 +0000] \"GET /api/users HTTP/1.1\" 401 72 \"-\" \"HTTPie\"","service":"acquisitions-api","timestamp":"2025-10-24T15:12:32.944Z"}
+{"level":"info","message":"::1 - - [24/Oct/2025:15:35:41 +0000] \"GET /api/users HTTP/1.1\" 401 72 \"-\" \"HTTPie\"","service":"acquisitions-api","timestamp":"2025-10-24T15:35:41.625Z"}
+{"level":"info","message":"User dennisdennoh62@gmail.com authenticated successfully","service":"acquisitions-api","timestamp":"2025-10-24T15:54:09.128Z"}
+{"level":"info","message":"User signed in successfully: dennisdennoh62@gmail.com","service":"acquisitions-api","timestamp":"2025-10-24T15:54:09.146Z"}
+{"level":"info","message":"::1 - - [24/Oct/2025:15:54:09 +0000] \"POST /api/auth/sign-in HTTP/1.1\" 200 122 \"-\" \"HTTPie\"","service":"acquisitions-api","timestamp":"2025-10-24T15:54:09.150Z"}
+{"level":"info","message":"Hello from Acquisitions!","service":"acquisitions-api","timestamp":"2025-10-24T16:52:23.118Z"}
+{"level":"info","message":"::1 - - [24/Oct/2025:16:52:23 +0000] \"GET / HTTP/1.1\" 200 24 \"-\" \"HTTPie\"","service":"acquisitions-api","timestamp":"2025-10-24T16:52:23.125Z"}
+{"level":"info","message":"Hello from Acquisitions!","service":"acquisitions-api","timestamp":"2025-10-24T16:52:25.869Z"}
+{"level":"info","message":"::1 - - [24/Oct/2025:16:52:25 +0000] \"GET / HTTP/1.1\" 200 24 \"-\" \"HTTPie\"","service":"acquisitions-api","timestamp":"2025-10-24T16:52:25.871Z"}
+{"level":"info","message":"Hello from Acquisitions!","service":"acquisitions-api","timestamp":"2025-10-24T16:52:27.603Z"}
+{"level":"info","message":"::1 - - [24/Oct/2025:16:52:27 +0000] \"GET / HTTP/1.1\" 200 24 \"-\" \"HTTPie\"","service":"acquisitions-api","timestamp":"2025-10-24T16:52:27.605Z"}
+{"level":"info","message":"Hello from Acquisitions!","service":"acquisitions-api","timestamp":"2025-10-24T16:52:29.333Z"}
+{"level":"info","message":"::1 - - [24/Oct/2025:16:52:29 +0000] \"GET / HTTP/1.1\" 200 24 \"-\" \"HTTPie\"","service":"acquisitions-api","timestamp":"2025-10-24T16:52:29.335Z"}
+{"level":"info","message":"Hello from Acquisitions!","service":"acquisitions-api","timestamp":"2025-10-24T16:52:30.572Z"}
+{"level":"info","message":"::1 - - [24/Oct/2025:16:52:30 +0000] \"GET / HTTP/1.1\" 200 24 \"-\" \"HTTPie\"","service":"acquisitions-api","timestamp":"2025-10-24T16:52:30.574Z"}
+{"level":"info","message":"Hello from Acquisitions!","service":"acquisitions-api","timestamp":"2025-10-24T16:52:31.580Z"}
+{"level":"info","message":"::1 - - [24/Oct/2025:16:52:31 +0000] \"GET / HTTP/1.1\" 200 24 \"-\" \"HTTPie\"","service":"acquisitions-api","timestamp":"2025-10-24T16:52:31.581Z"}
+{"level":"info","message":"Hello from Acquisitions!","service":"acquisitions-api","timestamp":"2025-10-24T16:52:32.497Z"}
+{"level":"info","message":"::1 - - [24/Oct/2025:16:52:32 +0000] \"GET / HTTP/1.1\" 200 24 \"-\" \"HTTPie\"","service":"acquisitions-api","timestamp":"2025-10-24T16:52:32.498Z"}
+{"level":"info","message":"Hello from Acquisitions!","service":"acquisitions-api","timestamp":"2025-10-24T16:52:33.370Z"}
+{"level":"info","message":"::1 - - [24/Oct/2025:16:52:33 +0000] \"GET / HTTP/1.1\" 200 24 \"-\" \"HTTPie\"","service":"acquisitions-api","timestamp":"2025-10-24T16:52:33.371Z"}
+{"level":"info","message":"Hello from Acquisitions!","service":"acquisitions-api","timestamp":"2025-10-24T16:52:34.174Z"}
+{"level":"info","message":"::1 - - [24/Oct/2025:16:52:34 +0000] \"GET / HTTP/1.1\" 200 24 \"-\" \"HTTPie\"","service":"acquisitions-api","timestamp":"2025-10-24T16:52:34.176Z"}
+{"level":"info","message":"Hello from Acquisitions!","service":"acquisitions-api","timestamp":"2025-10-24T16:52:35.017Z"}
+{"level":"info","message":"::1 - - [24/Oct/2025:16:52:35 +0000] \"GET / HTTP/1.1\" 200 24 \"-\" \"HTTPie\"","service":"acquisitions-api","timestamp":"2025-10-24T16:52:35.019Z"}
+{"level":"info","message":"Hello from Acquisitions!","service":"acquisitions-api","timestamp":"2025-10-24T16:52:36.045Z"}
+{"level":"info","message":"::1 - - [24/Oct/2025:16:52:36 +0000] \"GET / HTTP/1.1\" 200 24 \"-\" \"HTTPie\"","service":"acquisitions-api","timestamp":"2025-10-24T16:52:36.046Z"}
+{"level":"info","message":"Hello from Acquisitions!","service":"acquisitions-api","timestamp":"2025-10-24T16:52:37.698Z"}
+{"level":"info","message":"::1 - - [24/Oct/2025:16:52:37 +0000] \"GET / HTTP/1.1\" 200 24 \"-\" \"HTTPie\"","service":"acquisitions-api","timestamp":"2025-10-24T16:52:37.699Z"}
+{"level":"info","message":"Hello from Acquisitions!","service":"acquisitions-api","timestamp":"2025-10-24T16:52:38.805Z"}
+{"level":"info","message":"::1 - - [24/Oct/2025:16:52:38 +0000] \"GET / HTTP/1.1\" 200 24 \"-\" \"HTTPie\"","service":"acquisitions-api","timestamp":"2025-10-24T16:52:38.806Z"}
+{"level":"info","message":"Hello from Acquisitions!","service":"acquisitions-api","timestamp":"2025-10-24T16:52:39.692Z"}
+{"level":"info","message":"::1 - - [24/Oct/2025:16:52:39 +0000] \"GET / HTTP/1.1\" 200 24 \"-\" \"HTTPie\"","service":"acquisitions-api","timestamp":"2025-10-24T16:52:39.693Z"}
+{"level":"info","message":"Hello from Acquisitions!","service":"acquisitions-api","timestamp":"2025-10-24T16:52:40.699Z"}
+{"level":"info","message":"::1 - - [24/Oct/2025:16:52:40 +0000] \"GET / HTTP/1.1\" 200 24 \"-\" \"HTTPie\"","service":"acquisitions-api","timestamp":"2025-10-24T16:52:40.700Z"}
+{"level":"info","message":"Hello from Acquisitions!","service":"acquisitions-api","timestamp":"2025-10-24T16:52:41.978Z"}
+{"level":"info","message":"::1 - - [24/Oct/2025:16:52:41 +0000] \"GET / HTTP/1.1\" 200 24 \"-\" \"HTTPie\"","service":"acquisitions-api","timestamp":"2025-10-24T16:52:41.980Z"}
+{"level":"info","message":"Hello from Acquisitions!","service":"acquisitions-api","timestamp":"2025-10-24T16:52:42.828Z"}
+{"level":"info","message":"::1 - - [24/Oct/2025:16:52:42 +0000] \"GET / HTTP/1.1\" 200 24 \"-\" \"HTTPie\"","service":"acquisitions-api","timestamp":"2025-10-24T16:52:42.829Z"}
+{"level":"info","message":"Hello from Acquisitions!","service":"acquisitions-api","timestamp":"2025-10-24T16:52:43.785Z"}
+{"level":"info","message":"::1 - - [24/Oct/2025:16:52:43 +0000] \"GET / HTTP/1.1\" 200 24 \"-\" \"HTTPie\"","service":"acquisitions-api","timestamp":"2025-10-24T16:52:43.786Z"}
+{"level":"info","message":"Hello from Acquisitions!","service":"acquisitions-api","timestamp":"2025-10-24T16:52:44.615Z"}
+{"level":"info","message":"::1 - - [24/Oct/2025:16:52:44 +0000] \"GET / HTTP/1.1\" 200 24 \"-\" \"HTTPie\"","service":"acquisitions-api","timestamp":"2025-10-24T16:52:44.617Z"}
+{"level":"info","message":"Hello from Acquisitions!","service":"acquisitions-api","timestamp":"2025-10-24T16:52:45.432Z"}
+{"level":"info","message":"::1 - - [24/Oct/2025:16:52:45 +0000] \"GET / HTTP/1.1\" 200 24 \"-\" \"HTTPie\"","service":"acquisitions-api","timestamp":"2025-10-24T16:52:45.433Z"}
+{"level":"info","message":"Hello from Acquisitions!","service":"acquisitions-api","timestamp":"2025-10-24T16:52:46.351Z"}
+{"level":"info","message":"::1 - - [24/Oct/2025:16:52:46 +0000] \"GET / HTTP/1.1\" 200 24 \"-\" \"HTTPie\"","service":"acquisitions-api","timestamp":"2025-10-24T16:52:46.353Z"}
+{"level":"info","message":"Hello from Acquisitions!","service":"acquisitions-api","timestamp":"2025-10-24T16:52:47.208Z"}
+{"level":"info","message":"::1 - - [24/Oct/2025:16:52:47 +0000] \"GET / HTTP/1.1\" 200 24 \"-\" \"HTTPie\"","service":"acquisitions-api","timestamp":"2025-10-24T16:52:47.209Z"}
+{"level":"info","message":"Hello from Acquisitions!","service":"acquisitions-api","timestamp":"2025-10-24T16:52:48.104Z"}
+{"level":"info","message":"::1 - - [24/Oct/2025:16:52:48 +0000] \"GET / HTTP/1.1\" 200 24 \"-\" \"HTTPie\"","service":"acquisitions-api","timestamp":"2025-10-24T16:52:48.105Z"}
+{"level":"info","message":"Hello from Acquisitions!","service":"acquisitions-api","timestamp":"2025-10-24T16:52:48.890Z"}
+{"level":"info","message":"::1 - - [24/Oct/2025:16:52:48 +0000] \"GET / HTTP/1.1\" 200 24 \"-\" \"HTTPie\"","service":"acquisitions-api","timestamp":"2025-10-24T16:52:48.892Z"}
+{"level":"info","message":"::1 - - [24/Oct/2025:16:54:07 +0000] \"GET /api/users HTTP/1.1\" 401 72 \"-\" \"HTTPie\"","service":"acquisitions-api","timestamp":"2025-10-24T16:54:07.668Z"}
+{"level":"info","message":"::1 - - [24/Oct/2025:16:56:22 +0000] \"GET /health HTTP/1.1\" 200 74 \"-\" \"HTTPie\"","service":"acquisitions-api","timestamp":"2025-10-24T16:56:22.548Z"}
+{"level":"info","message":"::1 - - [24/Oct/2025:16:56:24 +0000] \"GET /health HTTP/1.1\" 200 74 \"-\" \"HTTPie\"","service":"acquisitions-api","timestamp":"2025-10-24T16:56:24.381Z"}
+{"level":"info","message":"::1 - - [24/Oct/2025:16:56:25 +0000] \"GET /health HTTP/1.1\" 200 74 \"-\" \"HTTPie\"","service":"acquisitions-api","timestamp":"2025-10-24T16:56:25.421Z"}
+{"level":"info","message":"::1 - - [24/Oct/2025:16:56:26 +0000] \"GET /health HTTP/1.1\" 200 74 \"-\" \"HTTPie\"","service":"acquisitions-api","timestamp":"2025-10-24T16:56:26.924Z"}
+{"level":"info","message":"::1 - - [24/Oct/2025:16:56:28 +0000] \"GET /health HTTP/1.1\" 200 74 \"-\" \"HTTPie\"","service":"acquisitions-api","timestamp":"2025-10-24T16:56:28.050Z"}
+{"level":"info","message":"::1 - - [24/Oct/2025:16:56:28 +0000] \"GET /health HTTP/1.1\" 200 73 \"-\" \"HTTPie\"","service":"acquisitions-api","timestamp":"2025-10-24T16:56:28.954Z"}
+{"level":"info","message":"::1 - - [24/Oct/2025:16:56:29 +0000] \"GET /health HTTP/1.1\" 200 74 \"-\" \"HTTPie\"","service":"acquisitions-api","timestamp":"2025-10-24T16:56:29.819Z"}
+{"level":"info","message":"::1 - - [24/Oct/2025:16:56:30 +0000] \"GET /health HTTP/1.1\" 200 74 \"-\" \"HTTPie\"","service":"acquisitions-api","timestamp":"2025-10-24T16:56:30.738Z"}
+{"level":"info","message":"::1 - - [24/Oct/2025:16:56:32 +0000] \"GET /health HTTP/1.1\" 200 74 \"-\" \"HTTPie\"","service":"acquisitions-api","timestamp":"2025-10-24T16:56:32.182Z"}
+{"level":"info","message":"::1 - - [24/Oct/2025:16:56:33 +0000] \"GET /health HTTP/1.1\" 200 74 \"-\" \"HTTPie\"","service":"acquisitions-api","timestamp":"2025-10-24T16:56:33.174Z"}
+{"level":"info","message":"::1 - - [24/Oct/2025:16:56:34 +0000] \"GET /health HTTP/1.1\" 200 74 \"-\" \"HTTPie\"","service":"acquisitions-api","timestamp":"2025-10-24T16:56:34.097Z"}
+{"level":"info","message":"::1 - - [24/Oct/2025:16:56:35 +0000] \"GET /health HTTP/1.1\" 200 74 \"-\" \"HTTPie\"","service":"acquisitions-api","timestamp":"2025-10-24T16:56:35.046Z"}
+{"level":"info","message":"::1 - - [24/Oct/2025:16:56:35 +0000] \"GET /health HTTP/1.1\" 200 74 \"-\" \"HTTPie\"","service":"acquisitions-api","timestamp":"2025-10-24T16:56:35.884Z"}
+{"level":"info","message":"::1 - - [24/Oct/2025:16:56:36 +0000] \"GET /health HTTP/1.1\" 200 74 \"-\" \"HTTPie\"","service":"acquisitions-api","timestamp":"2025-10-24T16:56:36.782Z"}
+{"level":"info","message":"::1 - - [24/Oct/2025:16:56:37 +0000] \"GET /health HTTP/1.1\" 200 74 \"-\" \"HTTPie\"","service":"acquisitions-api","timestamp":"2025-10-24T16:56:37.693Z"}
+{"level":"info","message":"::1 - - [24/Oct/2025:16:56:38 +0000] \"GET /health HTTP/1.1\" 200 74 \"-\" \"HTTPie\"","service":"acquisitions-api","timestamp":"2025-10-24T16:56:38.607Z"}
+{"level":"info","message":"::1 - - [24/Oct/2025:16:56:39 +0000] \"GET /health HTTP/1.1\" 200 74 \"-\" \"HTTPie\"","service":"acquisitions-api","timestamp":"2025-10-24T16:56:39.545Z"}
+{"level":"info","message":"::1 - - [24/Oct/2025:16:56:40 +0000] \"GET /health HTTP/1.1\" 200 74 \"-\" \"HTTPie\"","service":"acquisitions-api","timestamp":"2025-10-24T16:56:40.404Z"}
+{"level":"info","message":"::1 - - [24/Oct/2025:16:56:41 +0000] \"GET /health HTTP/1.1\" 200 74 \"-\" \"HTTPie\"","service":"acquisitions-api","timestamp":"2025-10-24T16:56:41.369Z"}
+{"level":"info","message":"::1 - - [24/Oct/2025:16:56:42 +0000] \"GET /health HTTP/1.1\" 200 74 \"-\" \"HTTPie\"","service":"acquisitions-api","timestamp":"2025-10-24T16:56:42.642Z"}
+{"level":"info","message":"::1 - - [24/Oct/2025:16:56:44 +0000] \"GET /health HTTP/1.1\" 200 74 \"-\" \"HTTPie\"","service":"acquisitions-api","timestamp":"2025-10-24T16:56:44.550Z"}
+{"level":"info","message":"::1 - - [24/Oct/2025:16:56:45 +0000] \"GET /health HTTP/1.1\" 200 74 \"-\" \"HTTPie\"","service":"acquisitions-api","timestamp":"2025-10-24T16:56:45.574Z"}
+{"level":"info","message":"::1 - - [24/Oct/2025:16:56:46 +0000] \"GET /health HTTP/1.1\" 200 74 \"-\" \"HTTPie\"","service":"acquisitions-api","timestamp":"2025-10-24T16:56:46.886Z"}
+{"level":"info","message":"::1 - - [24/Oct/2025:16:56:48 +0000] \"GET /health HTTP/1.1\" 200 74 \"-\" \"HTTPie\"","service":"acquisitions-api","timestamp":"2025-10-24T16:56:48.310Z"}
+{"level":"info","message":"::1 - - [24/Oct/2025:16:56:50 +0000] \"GET /health HTTP/1.1\" 200 74 \"-\" \"HTTPie\"","service":"acquisitions-api","timestamp":"2025-10-24T16:56:50.782Z"}
+{"level":"info","message":"::1 - - [24/Oct/2025:17:00:42 +0000] \"GET /api/users HTTP/1.1\" 401 72 \"-\" \"HTTPie\"","service":"acquisitions-api","timestamp":"2025-10-24T17:00:42.716Z"}
+{"level":"info","message":"User dennisdennoh@gmail.com created successfully","service":"acquisitions-api","timestamp":"2025-10-24T17:01:22.344Z"}
+{"level":"info","message":"User registered successfully: dennisdennoh@gmail.com","service":"acquisitions-api","timestamp":"2025-10-24T17:01:22.351Z"}
+{"level":"info","message":"::1 - - [24/Oct/2025:17:01:22 +0000] \"POST /api/auth/sign-up HTTP/1.1\" 201 105 \"-\" \"HTTPie\"","service":"acquisitions-api","timestamp":"2025-10-24T17:01:22.355Z"}
+{"level":"info","message":"::1 - - [24/Oct/2025:17:01:45 +0000] \"GET /health HTTP/1.1\" 200 74 \"-\" \"HTTPie\"","service":"acquisitions-api","timestamp":"2025-10-24T17:01:45.086Z"}
+{"level":"error","message":"Error creating the user: Error: User with this email already exists","service":"acquisitions-api","timestamp":"2025-10-24T17:01:54.987Z"}
+{"level":"error","message":"Signup error User with this email already exists","service":"acquisitions-api","stack":"Error: User with this email already exists\n    at createUser (file:///D:/acquisations/src/services/auth.service.js:34:13)\n    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)\n    at async signup (file:///D:/acquisations/src/controllers/auth.controller.js:21:18)","timestamp":"2025-10-24T17:01:54.988Z"}
+{"level":"info","message":"::1 - - [24/Oct/2025:17:01:54 +0000] \"POST /api/auth/sign-up HTTP/1.1\" 409 31 \"-\" \"HTTPie\"","service":"acquisitions-api","timestamp":"2025-10-24T17:01:54.990Z"}
+{"level":"error","message":"Error creating the user: Error: User with this email already exists","service":"acquisitions-api","timestamp":"2025-10-24T17:02:02.943Z"}
+{"level":"error","message":"Signup error User with this email already exists","service":"acquisitions-api","stack":"Error: User with this email already exists\n    at createUser (file:///D:/acquisations/src/services/auth.service.js:34:13)\n    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)\n    at async signup (file:///D:/acquisations/src/controllers/auth.controller.js:21:18)","timestamp":"2025-10-24T17:02:02.943Z"}
+{"level":"info","message":"::1 - - [24/Oct/2025:17:02:02 +0000] \"POST /api/auth/sign-up HTTP/1.1\" 409 31 \"-\" \"HTTPie\"","service":"acquisitions-api","timestamp":"2025-10-24T17:02:02.944Z"}
+{"level":"error","message":"Error creating the user: Error: User with this email already exists","service":"acquisitions-api","timestamp":"2025-10-24T17:02:04.629Z"}
+{"level":"error","message":"Signup error User with this email already exists","service":"acquisitions-api","stack":"Error: User with this email already exists\n    at createUser (file:///D:/acquisations/src/services/auth.service.js:34:13)\n    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)\n    at async signup (file:///D:/acquisations/src/controllers/auth.controller.js:21:18)","timestamp":"2025-10-24T17:02:04.630Z"}
+{"level":"info","message":"::1 - - [24/Oct/2025:17:02:04 +0000] \"POST /api/auth/sign-up HTTP/1.1\" 409 31 \"-\" \"HTTPie\"","service":"acquisitions-api","timestamp":"2025-10-24T17:02:04.631Z"}
+{"level":"error","message":"Error creating the user: Error: User with this email already exists","service":"acquisitions-api","timestamp":"2025-10-24T17:02:06.516Z"}
+{"level":"error","message":"Signup error User with this email already exists","service":"acquisitions-api","stack":"Error: User with this email already exists\n    at createUser (file:///D:/acquisations/src/services/auth.service.js:34:13)\n    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)\n    at async signup (file:///D:/acquisations/src/controllers/auth.controller.js:21:18)","timestamp":"2025-10-24T17:02:06.517Z"}
+{"level":"info","message":"::1 - - [24/Oct/2025:17:02:06 +0000] \"POST /api/auth/sign-up HTTP/1.1\" 409 31 \"-\" \"HTTPie\"","service":"acquisitions-api","timestamp":"2025-10-24T17:02:06.518Z"}
+{"level":"error","message":"Error creating the user: Error: User with this email already exists","service":"acquisitions-api","timestamp":"2025-10-24T17:02:08.455Z"}
+{"level":"error","message":"Signup error User with this email already exists","service":"acquisitions-api","stack":"Error: User with this email already exists\n    at createUser (file:///D:/acquisations/src/services/auth.service.js:34:13)\n    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)\n    at async signup (file:///D:/acquisations/src/controllers/auth.controller.js:21:18)","timestamp":"2025-10-24T17:02:08.456Z"}
+{"level":"info","message":"::1 - - [24/Oct/2025:17:02:08 +0000] \"POST /api/auth/sign-up HTTP/1.1\" 409 31 \"-\" \"HTTPie\"","service":"acquisitions-api","timestamp":"2025-10-24T17:02:08.457Z"}
+{"level":"error","message":"Error creating the user: Error: User with this email already exists","service":"acquisitions-api","timestamp":"2025-10-24T17:02:09.829Z"}
+{"level":"error","message":"Signup error User with this email already exists","service":"acquisitions-api","stack":"Error: User with this email already exists\n    at createUser (file:///D:/acquisations/src/services/auth.service.js:34:13)\n    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)\n    at async signup (file:///D:/acquisations/src/controllers/auth.controller.js:21:18)","timestamp":"2025-10-24T17:02:09.830Z"}
+{"level":"info","message":"::1 - - [24/Oct/2025:17:02:09 +0000] \"POST /api/auth/sign-up HTTP/1.1\" 409 31 \"-\" \"HTTPie\"","service":"acquisitions-api","timestamp":"2025-10-24T17:02:09.831Z"}
+{"level":"error","message":"Error creating the user: Error: User with this email already exists","service":"acquisitions-api","timestamp":"2025-10-24T17:02:11.635Z"}
+{"level":"error","message":"Signup error User with this email already exists","service":"acquisitions-api","stack":"Error: User with this email already exists\n    at createUser (file:///D:/acquisations/src/services/auth.service.js:34:13)\n    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)\n    at async signup (file:///D:/acquisations/src/controllers/auth.controller.js:21:18)","timestamp":"2025-10-24T17:02:11.635Z"}
+{"level":"info","message":"::1 - - [24/Oct/2025:17:02:11 +0000] \"POST /api/auth/sign-up HTTP/1.1\" 409 31 \"-\" \"HTTPie\"","service":"acquisitions-api","timestamp":"2025-10-24T17:02:11.637Z"}
+{"level":"error","message":"Error creating the user: Error: User with this email already exists","service":"acquisitions-api","timestamp":"2025-10-24T17:02:13.295Z"}
+{"level":"error","message":"Signup error User with this email already exists","service":"acquisitions-api","stack":"Error: User with this email already exists\n    at createUser (file:///D:/acquisations/src/services/auth.service.js:34:13)\n    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)\n    at async signup (file:///D:/acquisations/src/controllers/auth.controller.js:21:18)","timestamp":"2025-10-24T17:02:13.295Z"}
+{"level":"info","message":"::1 - - [24/Oct/2025:17:02:13 +0000] \"POST /api/auth/sign-up HTTP/1.1\" 409 31 \"-\" \"HTTPie\"","service":"acquisitions-api","timestamp":"2025-10-24T17:02:13.297Z"}
+{"level":"error","message":"Error creating the user: Error: User with this email already exists","service":"acquisitions-api","timestamp":"2025-10-24T17:02:14.758Z"}
+{"level":"error","message":"Signup error User with this email already exists","service":"acquisitions-api","stack":"Error: User with this email already exists\n    at createUser (file:///D:/acquisations/src/services/auth.service.js:34:13)\n    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)\n    at async signup (file:///D:/acquisations/src/controllers/auth.controller.js:21:18)","timestamp":"2025-10-24T17:02:14.759Z"}
+{"level":"info","message":"::1 - - [24/Oct/2025:17:02:14 +0000] \"POST /api/auth/sign-up HTTP/1.1\" 409 31 \"-\" \"HTTPie\"","service":"acquisitions-api","timestamp":"2025-10-24T17:02:14.761Z"}
+{"level":"error","message":"Error creating the user: Error: User with this email already exists","service":"acquisitions-api","timestamp":"2025-10-24T17:02:16.077Z"}
+{"level":"error","message":"Signup error User with this email already exists","service":"acquisitions-api","stack":"Error: User with this email already exists\n    at createUser (file:///D:/acquisations/src/services/auth.service.js:34:13)\n    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)\n    at async signup (file:///D:/acquisations/src/controllers/auth.controller.js:21:18)","timestamp":"2025-10-24T17:02:16.078Z"}
+{"level":"info","message":"::1 - - [24/Oct/2025:17:02:16 +0000] \"POST /api/auth/sign-up HTTP/1.1\" 409 31 \"-\" \"HTTPie\"","service":"acquisitions-api","timestamp":"2025-10-24T17:02:16.079Z"}
+{"level":"error","message":"Error creating the user: Error: User with this email already exists","service":"acquisitions-api","timestamp":"2025-10-24T17:02:17.427Z"}
+{"level":"error","message":"Signup error User with this email already exists","service":"acquisitions-api","stack":"Error: User with this email already exists\n    at createUser (file:///D:/acquisations/src/services/auth.service.js:34:13)\n    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)\n    at async signup (file:///D:/acquisations/src/controllers/auth.controller.js:21:18)","timestamp":"2025-10-24T17:02:17.428Z"}
+{"level":"info","message":"::1 - - [24/Oct/2025:17:02:17 +0000] \"POST /api/auth/sign-up HTTP/1.1\" 409 31 \"-\" \"HTTPie\"","service":"acquisitions-api","timestamp":"2025-10-24T17:02:17.429Z"}
+{"level":"error","message":"Error creating the user: Error: User with this email already exists","service":"acquisitions-api","timestamp":"2025-10-24T17:02:19.037Z"}
+{"level":"error","message":"Signup error User with this email already exists","service":"acquisitions-api","stack":"Error: User with this email already exists\n    at createUser (file:///D:/acquisations/src/services/auth.service.js:34:13)\n    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)\n    at async signup (file:///D:/acquisations/src/controllers/auth.controller.js:21:18)","timestamp":"2025-10-24T17:02:19.038Z"}
+{"level":"info","message":"::1 - - [24/Oct/2025:17:02:19 +0000] \"POST /api/auth/sign-up HTTP/1.1\" 409 31 \"-\" \"HTTPie\"","service":"acquisitions-api","timestamp":"2025-10-24T17:02:19.039Z"}
+{"level":"error","message":"Error creating the user: Error: User with this email already exists","service":"acquisitions-api","timestamp":"2025-10-24T17:02:20.296Z"}
+{"level":"error","message":"Signup error User with this email already exists","service":"acquisitions-api","stack":"Error: User with this email already exists\n    at createUser (file:///D:/acquisations/src/services/auth.service.js:34:13)\n    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)\n    at async signup (file:///D:/acquisations/src/controllers/auth.controller.js:21:18)","timestamp":"2025-10-24T17:02:20.297Z"}
+{"level":"info","message":"::1 - - [24/Oct/2025:17:02:20 +0000] \"POST /api/auth/sign-up HTTP/1.1\" 409 31 \"-\" \"HTTPie\"","service":"acquisitions-api","timestamp":"2025-10-24T17:02:20.298Z"}
+{"level":"error","message":"Error creating the user: Error: User with this email already exists","service":"acquisitions-api","timestamp":"2025-10-24T17:02:21.605Z"}
+{"level":"error","message":"Signup error User with this email already exists","service":"acquisitions-api","stack":"Error: User with this email already exists\n    at createUser (file:///D:/acquisations/src/services/auth.service.js:34:13)\n    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)\n    at async signup (file:///D:/acquisations/src/controllers/auth.controller.js:21:18)","timestamp":"2025-10-24T17:02:21.606Z"}
+{"level":"info","message":"::1 - - [24/Oct/2025:17:02:21 +0000] \"POST /api/auth/sign-up HTTP/1.1\" 409 31 \"-\" \"HTTPie\"","service":"acquisitions-api","timestamp":"2025-10-24T17:02:21.608Z"}
+{"level":"error","message":"Error creating the user: Error: User with this email already exists","service":"acquisitions-api","timestamp":"2025-10-24T17:02:22.869Z"}
+{"level":"error","message":"Signup error User with this email already exists","service":"acquisitions-api","stack":"Error: User with this email already exists\n    at createUser (file:///D:/acquisations/src/services/auth.service.js:34:13)\n    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)\n    at async signup (file:///D:/acquisations/src/controllers/auth.controller.js:21:18)","timestamp":"2025-10-24T17:02:22.870Z"}
+{"level":"info","message":"::1 - - [24/Oct/2025:17:02:22 +0000] \"POST /api/auth/sign-up HTTP/1.1\" 409 31 \"-\" \"HTTPie\"","service":"acquisitions-api","timestamp":"2025-10-24T17:02:22.871Z"}
+{"level":"error","message":"Error creating the user: Error: User with this email already exists","service":"acquisitions-api","timestamp":"2025-10-24T17:02:24.273Z"}
+{"level":"error","message":"Signup error User with this email already exists","service":"acquisitions-api","stack":"Error: User with this email already exists\n    at createUser (file:///D:/acquisations/src/services/auth.service.js:34:13)\n    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)\n    at async signup (file:///D:/acquisations/src/controllers/auth.controller.js:21:18)","timestamp":"2025-10-24T17:02:24.274Z"}
+{"level":"info","message":"::1 - - [24/Oct/2025:17:02:24 +0000] \"POST /api/auth/sign-up HTTP/1.1\" 409 31 \"-\" \"HTTPie\"","service":"acquisitions-api","timestamp":"2025-10-24T17:02:24.276Z"}
+{"level":"error","message":"Error creating the user: Error: User with this email already exists","service":"acquisitions-api","timestamp":"2025-10-24T17:02:25.463Z"}
+{"level":"error","message":"Signup error User with this email already exists","service":"acquisitions-api","stack":"Error: User with this email already exists\n    at createUser (file:///D:/acquisations/src/services/auth.service.js:34:13)\n    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)\n    at async signup (file:///D:/acquisations/src/controllers/auth.controller.js:21:18)","timestamp":"2025-10-24T17:02:25.464Z"}
+{"level":"info","message":"::1 - - [24/Oct/2025:17:02:25 +0000] \"POST /api/auth/sign-up HTTP/1.1\" 409 31 \"-\" \"HTTPie\"","service":"acquisitions-api","timestamp":"2025-10-24T17:02:25.465Z"}
+{"level":"info","message":"::1 - - [25/Oct/2025:12:04:41 +0000] \"GET /health HTTP/1.1\" 200 75 \"-\" \"-\"","service":"acquisitions-api","timestamp":"2025-10-25T12:04:41.915Z"}
+{"level":"info","message":"::1 - - [25/Oct/2025:12:05:12 +0000] \"GET /health HTTP/1.1\" 200 76 \"-\" \"-\"","service":"acquisitions-api","timestamp":"2025-10-25T12:05:12.347Z"}
+{"level":"info","message":"::1 - - [25/Oct/2025:12:05:42 +0000] \"GET /health HTTP/1.1\" 200 76 \"-\" \"-\"","service":"acquisitions-api","timestamp":"2025-10-25T12:05:42.823Z"}
+{"level":"info","message":"::1 - - [25/Oct/2025:12:06:13 +0000] \"GET /health HTTP/1.1\" 200 76 \"-\" \"-\"","service":"acquisitions-api","timestamp":"2025-10-25T12:06:13.250Z"}
+{"level":"info","message":"::1 - - [25/Oct/2025:12:06:43 +0000] \"GET /health HTTP/1.1\" 200 76 \"-\" \"-\"","service":"acquisitions-api","timestamp":"2025-10-25T12:06:43.689Z"}
+{"level":"info","message":"Hello from Acquisitions!","service":"acquisitions-api","timestamp":"2025-10-25T12:07:03.950Z"}
+{"level":"info","message":"::ffff:172.20.0.1 - - [25/Oct/2025:12:07:03 +0000] \"GET / HTTP/1.1\" 200 24 \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36\"","service":"acquisitions-api","timestamp":"2025-10-25T12:07:03.952Z"}
+{"level":"info","message":"::ffff:172.20.0.1 - - [25/Oct/2025:12:07:04 +0000] \"GET /favicon.ico HTTP/1.1\" 404 27 \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36\"","service":"acquisitions-api","timestamp":"2025-10-25T12:07:04.776Z"}
+{"level":"info","message":"::1 - - [25/Oct/2025:12:07:14 +0000] \"GET /health HTTP/1.1\" 200 77 \"-\" \"-\"","service":"acquisitions-api","timestamp":"2025-10-25T12:07:14.107Z"}
+{"level":"info","message":"::1 - - [25/Oct/2025:12:07:44 +0000] \"GET /health HTTP/1.1\" 200 77 \"-\" \"-\"","service":"acquisitions-api","timestamp":"2025-10-25T12:07:44.581Z"}
+{"level":"info","message":"::ffff:172.20.0.1 - - [25/Oct/2025:12:08:14 +0000] \"GET /health HTTP/1.1\" 200 77 \"-\" \"HTTPie\"","service":"acquisitions-api","timestamp":"2025-10-25T12:08:14.003Z"}
+{"level":"info","message":"::1 - - [25/Oct/2025:12:08:15 +0000] \"GET /health HTTP/1.1\" 200 76 \"-\" \"-\"","service":"acquisitions-api","timestamp":"2025-10-25T12:08:15.020Z"}
+{"level":"info","message":"::1 - - [25/Oct/2025:12:08:45 +0000] \"GET /health HTTP/1.1\" 200 77 \"-\" \"-\"","service":"acquisitions-api","timestamp":"2025-10-25T12:08:45.443Z"}
+{"level":"info","message":"::1 - - [25/Oct/2025:12:09:15 +0000] \"GET /health HTTP/1.1\" 200 77 \"-\" \"-\"","service":"acquisitions-api","timestamp":"2025-10-25T12:09:15.873Z"}
+{"level":"info","message":"::1 - - [25/Oct/2025:12:09:46 +0000] \"GET /health HTTP/1.1\" 200 77 \"-\" \"-\"","service":"acquisitions-api","timestamp":"2025-10-25T12:09:46.293Z"}
+{"level":"info","message":"::1 - - [25/Oct/2025:12:10:16 +0000] \"GET /health HTTP/1.1\" 200 77 \"-\" \"-\"","service":"acquisitions-api","timestamp":"2025-10-25T12:10:16.721Z"}
+{"level":"info","message":"::1 - - [25/Oct/2025:12:10:47 +0000] \"GET /health HTTP/1.1\" 200 75 \"-\" \"-\"","service":"acquisitions-api","timestamp":"2025-10-25T12:10:47.152Z"}
+{"level":"info","message":"::1 - - [25/Oct/2025:12:11:17 +0000] \"GET /health HTTP/1.1\" 200 76 \"-\" \"-\"","service":"acquisitions-api","timestamp":"2025-10-25T12:11:17.580Z"}
+{"level":"info","message":"::1 - - [25/Oct/2025:12:11:47 +0000] \"GET /health HTTP/1.1\" 200 77 \"-\" \"-\"","service":"acquisitions-api","timestamp":"2025-10-25T12:11:47.994Z"}
+{"level":"error","message":"Error creating the user: Error: User with this email already exists","service":"acquisitions-api","timestamp":"2025-10-25T12:12:14.979Z"}
+{"level":"error","message":"Signup error User with this email already exists","service":"acquisitions-api","stack":"Error: User with this email already exists\n    at createUser (file:///app/src/services/auth.service.js:34:13)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async signup (file:///app/src/controllers/auth.controller.js:21:18)","timestamp":"2025-10-25T12:12:14.981Z"}
+{"level":"info","message":"::ffff:172.20.0.1 - - [25/Oct/2025:12:12:14 +0000] \"POST /api/auth/sign-up HTTP/1.1\" 409 31 \"-\" \"HTTPie\"","service":"acquisitions-api","timestamp":"2025-10-25T12:12:14.985Z"}
+{"level":"info","message":"::1 - - [25/Oct/2025:12:12:18 +0000] \"GET /health HTTP/1.1\" 200 77 \"-\" \"-\"","service":"acquisitions-api","timestamp":"2025-10-25T12:12:18.414Z"}
+{"level":"info","message":"::1 - - [25/Oct/2025:12:12:48 +0000] \"GET /health HTTP/1.1\" 200 77 \"-\" \"-\"","service":"acquisitions-api","timestamp":"2025-10-25T12:12:48.852Z"}
+{"level":"info","message":"::1 - - [25/Oct/2025:12:13:19 +0000] \"GET /health HTTP/1.1\" 200 77 \"-\" \"-\"","service":"acquisitions-api","timestamp":"2025-10-25T12:13:19.273Z"}
+{"level":"info","message":"User step@gmail.com created successfully","service":"acquisitions-api","timestamp":"2025-10-25T12:13:37.223Z"}
+{"level":"info","message":"User registered successfully: step@gmail.com","service":"acquisitions-api","timestamp":"2025-10-25T12:13:37.228Z"}
+{"level":"info","message":"::ffff:172.20.0.1 - - [25/Oct/2025:12:13:37 +0000] \"POST /api/auth/sign-up HTTP/1.1\" 201 98 \"-\" \"HTTPie\"","service":"acquisitions-api","timestamp":"2025-10-25T12:13:37.230Z"}
+{"level":"info","message":"::1 - - [25/Oct/2025:12:13:49 +0000] \"GET /health HTTP/1.1\" 200 77 \"-\" \"-\"","service":"acquisitions-api","timestamp":"2025-10-25T12:13:49.721Z"}
+{"level":"info","message":"::1 - - [25/Oct/2025:12:14:20 +0000] \"GET /health HTTP/1.1\" 200 77 \"-\" \"-\"","service":"acquisitions-api","timestamp":"2025-10-25T12:14:20.158Z"}
+{"level":"info","message":"::1 - - [25/Oct/2025:12:14:50 +0000] \"GET /health HTTP/1.1\" 200 76 \"-\" \"-\"","service":"acquisitions-api","timestamp":"2025-10-25T12:14:50.596Z"}
+{"level":"info","message":"::1 - - [25/Oct/2025:12:15:21 +0000] \"GET /health HTTP/1.1\" 200 77 \"-\" \"-\"","service":"acquisitions-api","timestamp":"2025-10-25T12:15:21.032Z"}
+{"level":"info","message":"::ffff:172.20.0.1 - - [25/Oct/2025:12:15:34 +0000] \"GET /health HTTP/1.1\" 200 77 \"-\" \"HTTPie\"","service":"acquisitions-api","timestamp":"2025-10-25T12:15:34.937Z"}
+{"level":"info","message":"::1 - - [25/Oct/2025:12:15:51 +0000] \"GET /health HTTP/1.1\" 200 77 \"-\" \"-\"","service":"acquisitions-api","timestamp":"2025-10-25T12:15:51.524Z"}
+{"level":"info","message":"::1 - - [25/Oct/2025:12:16:21 +0000] \"GET /health HTTP/1.1\" 200 77 \"-\" \"-\"","service":"acquisitions-api","timestamp":"2025-10-25T12:16:21.970Z"}
+{"level":"info","message":"::1 - - [25/Oct/2025:12:16:52 +0000] \"GET /health HTTP/1.1\" 200 77 \"-\" \"-\"","service":"acquisitions-api","timestamp":"2025-10-25T12:16:52.433Z"}
+{"level":"info","message":"::1 - - [25/Oct/2025:12:17:22 +0000] \"GET /health HTTP/1.1\" 200 77 \"-\" \"-\"","service":"acquisitions-api","timestamp":"2025-10-25T12:17:22.886Z"}
+{"level":"info","message":"::1 - - [25/Oct/2025:12:17:53 +0000] \"GET /health HTTP/1.1\" 200 76 \"-\" \"-\"","service":"acquisitions-api","timestamp":"2025-10-25T12:17:53.314Z"}
+{"level":"info","message":"::1 - - [25/Oct/2025:12:18:23 +0000] \"GET /health HTTP/1.1\" 200 77 \"-\" \"-\"","service":"acquisitions-api","timestamp":"2025-10-25T12:18:23.751Z"}
+{"level":"info","message":"::1 - - [25/Oct/2025:12:18:54 +0000] \"GET /health HTTP/1.1\" 200 77 \"-\" \"-\"","service":"acquisitions-api","timestamp":"2025-10-25T12:18:54.216Z"}
+{"level":"info","message":"::1 - - [25/Oct/2025:12:19:24 +0000] \"GET /health HTTP/1.1\" 200 77 \"-\" \"-\"","service":"acquisitions-api","timestamp":"2025-10-25T12:19:24.635Z"}
+{"level":"info","message":"::1 - - [25/Oct/2025:12:19:55 +0000] \"GET /health HTTP/1.1\" 200 74 \"-\" \"-\"","service":"acquisitions-api","timestamp":"2025-10-25T12:19:55.088Z"}
+{"level":"info","message":"::1 - - [25/Oct/2025:12:20:25 +0000] \"GET /health HTTP/1.1\" 200 75 \"-\" \"-\"","service":"acquisitions-api","timestamp":"2025-10-25T12:20:25.541Z"}
+{"level":"info","message":"::1 - - [25/Oct/2025:12:20:55 +0000] \"GET /health HTTP/1.1\" 200 77 \"-\" \"-\"","service":"acquisitions-api","timestamp":"2025-10-25T12:20:55.978Z"}
+{"level":"info","message":"::1 - - [25/Oct/2025:12:21:26 +0000] \"GET /health HTTP/1.1\" 200 78 \"-\" \"-\"","service":"acquisitions-api","timestamp":"2025-10-25T12:21:26.395Z"}
+{"level":"info","message":"::ffff:172.20.0.1 - - [25/Oct/2025:12:21:49 +0000] \"GET /health HTTP/1.1\" 200 78 \"-\" \"HTTPie\"","service":"acquisitions-api","timestamp":"2025-10-25T12:21:49.847Z"}
+{"level":"info","message":"::1 - - [25/Oct/2025:12:21:56 +0000] \"GET /health HTTP/1.1\" 200 78 \"-\" \"-\"","service":"acquisitions-api","timestamp":"2025-10-25T12:21:56.860Z"}
+{"level":"error","message":"Error creating the user: Error: User with this email already exists","service":"acquisitions-api","timestamp":"2025-10-25T12:21:58.160Z"}
+{"level":"error","message":"Signup error User with this email already exists","service":"acquisitions-api","stack":"Error: User with this email already exists\n    at createUser (file:///app/src/services/auth.service.js:34:13)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async signup (file:///app/src/controllers/auth.controller.js:21:18)","timestamp":"2025-10-25T12:21:58.160Z"}
+{"level":"info","message":"::ffff:172.20.0.1 - - [25/Oct/2025:12:21:58 +0000] \"POST /api/auth/sign-up HTTP/1.1\" 409 31 \"-\" \"HTTPie\"","service":"acquisitions-api","timestamp":"2025-10-25T12:21:58.163Z"}
+{"level":"info","message":"User stepe@gmail.com created successfully","service":"acquisitions-api","timestamp":"2025-10-25T12:22:11.675Z"}
+{"level":"info","message":"User registered successfully: stepe@gmail.com","service":"acquisitions-api","timestamp":"2025-10-25T12:22:11.680Z"}
+{"level":"info","message":"::ffff:172.20.0.1 - - [25/Oct/2025:12:22:11 +0000] \"POST /api/auth/sign-up HTTP/1.1\" 201 102 \"-\" \"HTTPie\"","service":"acquisitions-api","timestamp":"2025-10-25T12:22:11.681Z"}
+{"level":"info","message":"::1 - - [25/Oct/2025:12:22:27 +0000] \"GET /health HTTP/1.1\" 200 78 \"-\" \"-\"","service":"acquisitions-api","timestamp":"2025-10-25T12:22:27.283Z"}
+{"level":"info","message":"::1 - - [25/Oct/2025:12:22:57 +0000] \"GET /health HTTP/1.1\" 200 78 \"-\" \"-\"","service":"acquisitions-api","timestamp":"2025-10-25T12:22:57.698Z"}
+{"level":"info","message":"::1 - - [25/Oct/2025:12:23:28 +0000] \"GET /health HTTP/1.1\" 200 78 \"-\" \"-\"","service":"acquisitions-api","timestamp":"2025-10-25T12:23:28.119Z"}
+{"level":"info","message":"::1 - - [25/Oct/2025:12:23:58 +0000] \"GET /health HTTP/1.1\" 200 78 \"-\" \"-\"","service":"acquisitions-api","timestamp":"2025-10-25T12:23:58.560Z"}
+{"level":"info","message":"::1 - - [25/Oct/2025:12:24:29 +0000] \"GET /health HTTP/1.1\" 200 78 \"-\" \"-\"","service":"acquisitions-api","timestamp":"2025-10-25T12:24:29.316Z"}
+{"level":"info","message":"::1 - - [25/Oct/2025:12:24:59 +0000] \"GET /health HTTP/1.1\" 200 78 \"-\" \"-\"","service":"acquisitions-api","timestamp":"2025-10-25T12:24:59.766Z"}
+{"level":"info","message":"::1 - - [25/Oct/2025:12:25:30 +0000] \"GET /health HTTP/1.1\" 200 78 \"-\" \"-\"","service":"acquisitions-api","timestamp":"2025-10-25T12:25:30.190Z"}
+{"level":"info","message":"::1 - - [25/Oct/2025:12:26:00 +0000] \"GET /health HTTP/1.1\" 200 78 \"-\" \"-\"","service":"acquisitions-api","timestamp":"2025-10-25T12:26:00.609Z"}
+{"level":"info","message":"::1 - - [25/Oct/2025:12:26:31 +0000] \"GET /health HTTP/1.1\" 200 77 \"-\" \"-\"","service":"acquisitions-api","timestamp":"2025-10-25T12:26:31.038Z"}
+{"level":"info","message":"::1 - - [25/Oct/2025:12:27:01 +0000] \"GET /health HTTP/1.1\" 200 78 \"-\" \"-\"","service":"acquisitions-api","timestamp":"2025-10-25T12:27:01.486Z"}
+{"level":"info","message":"::1 - - [25/Oct/2025:12:27:31 +0000] \"GET /health HTTP/1.1\" 200 78 \"-\" \"-\"","service":"acquisitions-api","timestamp":"2025-10-25T12:27:31.921Z"}
+{"level":"info","message":"::1 - - [25/Oct/2025:12:28:02 +0000] \"GET /health HTTP/1.1\" 200 78 \"-\" \"-\"","service":"acquisitions-api","timestamp":"2025-10-25T12:28:02.372Z"}
+{"level":"info","message":"::1 - - [25/Oct/2025:12:28:32 +0000] \"GET /health HTTP/1.1\" 200 78 \"-\" \"-\"","service":"acquisitions-api","timestamp":"2025-10-25T12:28:32.795Z"}
+{"level":"info","message":"::1 - - [25/Oct/2025:12:29:03 +0000] \"GET /health HTTP/1.1\" 200 78 \"-\" \"-\"","service":"acquisitions-api","timestamp":"2025-10-25T12:29:03.258Z"}
+{"level":"info","message":"::1 - - [25/Oct/2025:12:29:33 +0000] \"GET /health HTTP/1.1\" 200 78 \"-\" \"-\"","service":"acquisitions-api","timestamp":"2025-10-25T12:29:33.670Z"}
+{"level":"info","message":"::1 - - [25/Oct/2025:12:30:04 +0000] \"GET /health HTTP/1.1\" 200 78 \"-\" \"-\"","service":"acquisitions-api","timestamp":"2025-10-25T12:30:04.104Z"}
+{"level":"info","message":"::1 - - [25/Oct/2025:12:30:34 +0000] \"GET /health HTTP/1.1\" 200 78 \"-\" \"-\"","service":"acquisitions-api","timestamp":"2025-10-25T12:30:34.542Z"}
+{"level":"info","message":"::1 - - [25/Oct/2025:12:31:04 +0000] \"GET /health HTTP/1.1\" 200 78 \"-\" \"-\"","service":"acquisitions-api","timestamp":"2025-10-25T12:31:04.948Z"}
+{"level":"info","message":"::1 - - [25/Oct/2025:12:31:35 +0000] \"GET /health HTTP/1.1\" 200 78 \"-\" \"-\"","service":"acquisitions-api","timestamp":"2025-10-25T12:31:35.369Z"}
+{"level":"info","message":"::1 - - [25/Oct/2025:12:32:05 +0000] \"GET /health HTTP/1.1\" 200 78 \"-\" \"-\"","service":"acquisitions-api","timestamp":"2025-10-25T12:32:05.818Z"}
+{"level":"info","message":"::1 - - [25/Oct/2025:12:32:36 +0000] \"GET /health HTTP/1.1\" 200 78 \"-\" \"-\"","service":"acquisitions-api","timestamp":"2025-10-25T12:32:36.258Z"}
+{"level":"info","message":"::1 - - [25/Oct/2025:12:33:06 +0000] \"GET /health HTTP/1.1\" 200 78 \"-\" \"-\"","service":"acquisitions-api","timestamp":"2025-10-25T12:33:06.690Z"}
+{"level":"info","message":"::1 - - [25/Oct/2025:12:33:37 +0000] \"GET /health HTTP/1.1\" 200 78 \"-\" \"-\"","service":"acquisitions-api","timestamp":"2025-10-25T12:33:37.142Z"}
+{"level":"info","message":"::1 - - [25/Oct/2025:12:34:07 +0000] \"GET /health HTTP/1.1\" 200 78 \"-\" \"-\"","service":"acquisitions-api","timestamp":"2025-10-25T12:34:07.566Z"}
+{"level":"info","message":"::1 - - [25/Oct/2025:12:34:37 +0000] \"GET /health HTTP/1.1\" 200 78 \"-\" \"-\"","service":"acquisitions-api","timestamp":"2025-10-25T12:34:37.973Z"}
+{"level":"info","message":"::1 - - [25/Oct/2025:12:35:08 +0000] \"GET /health HTTP/1.1\" 200 78 \"-\" \"-\"","service":"acquisitions-api","timestamp":"2025-10-25T12:35:08.397Z"}
+{"level":"info","message":"::1 - - [25/Oct/2025:12:35:38 +0000] \"GET /health HTTP/1.1\" 200 78 \"-\" \"-\"","service":"acquisitions-api","timestamp":"2025-10-25T12:35:38.817Z"}
+{"level":"info","message":"::1 - - [25/Oct/2025:12:36:09 +0000] \"GET /health HTTP/1.1\" 200 78 \"-\" \"-\"","service":"acquisitions-api","timestamp":"2025-10-25T12:36:09.250Z"}
+{"level":"info","message":"::1 - - [25/Oct/2025:12:36:39 +0000] \"GET /health HTTP/1.1\" 200 76 \"-\" \"-\"","service":"acquisitions-api","timestamp":"2025-10-25T12:36:39.692Z"}
+{"level":"info","message":"::1 - - [25/Oct/2025:12:37:10 +0000] \"GET /health HTTP/1.1\" 200 78 \"-\" \"-\"","service":"acquisitions-api","timestamp":"2025-10-25T12:37:10.100Z"}
+{"level":"info","message":"::1 - - [25/Oct/2025:12:37:40 +0000] \"GET /health HTTP/1.1\" 200 78 \"-\" \"-\"","service":"acquisitions-api","timestamp":"2025-10-25T12:37:40.519Z"}
+{"level":"info","message":"::1 - - [25/Oct/2025:12:38:10 +0000] \"GET /health HTTP/1.1\" 200 78 \"-\" \"-\"","service":"acquisitions-api","timestamp":"2025-10-25T12:38:10.919Z"}
+{"level":"info","message":"::1 - - [25/Oct/2025:12:38:41 +0000] \"GET /health HTTP/1.1\" 200 78 \"-\" \"-\"","service":"acquisitions-api","timestamp":"2025-10-25T12:38:41.320Z"}
+{"level":"info","message":"::1 - - [25/Oct/2025:12:39:11 +0000] \"GET /health HTTP/1.1\" 200 78 \"-\" \"-\"","service":"acquisitions-api","timestamp":"2025-10-25T12:39:11.726Z"}
+{"level":"info","message":"::1 - - [25/Oct/2025:12:39:42 +0000] \"GET /health HTTP/1.1\" 200 78 \"-\" \"-\"","service":"acquisitions-api","timestamp":"2025-10-25T12:39:42.150Z"}
+{"level":"info","message":"::1 - - [25/Oct/2025:12:40:12 +0000] \"GET /health HTTP/1.1\" 200 78 \"-\" \"-\"","service":"acquisitions-api","timestamp":"2025-10-25T12:40:12.574Z"}
+{"level":"info","message":"::1 - - [25/Oct/2025:12:40:43 +0000] \"GET /health HTTP/1.1\" 200 78 \"-\" \"-\"","service":"acquisitions-api","timestamp":"2025-10-25T12:40:43.017Z"}

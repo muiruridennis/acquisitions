@@ -1,2 +1,8 @@
-node_modules
+# dependencies
+node_modules/
+
+# environment variables
+.env
 .env.*
+!.env.example
+.neon_local/
