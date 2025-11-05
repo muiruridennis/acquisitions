@@ -14,7 +14,6 @@ on:
 env:
   REGISTRY: docker.io
   IMAGE_NAME: ${{ secrets.DOCKER_USERNAME }}/kubernetes-demo-api
-
 jobs:
   build-and-push:
     name: Build and Push Docker Image
