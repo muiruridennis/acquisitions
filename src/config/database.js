@@ -13,7 +13,7 @@
  * @constant {Object} db - The Drizzle ORM instance for interacting with the database.
  */
 import "dotenv/config";
-import {neon } from "@neondatabase/serverless";
+import {neon, neonConfig } from "@neondatabase/serverless";
 import {drizzle} from "drizzle-orm/neon-http";
 
 if (process.env.NODE_ENV === 'development') {
