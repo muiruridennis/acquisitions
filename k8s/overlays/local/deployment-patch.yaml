@@ -6,15 +6,15 @@ kind: Deployment
 metadata:
   name: acquisitions-app
 spec:
-  replicas: 1  # Only 1 replica locally
+  replicas: 1 # Only 1 replica locally
   template:
     spec:
       containers:
-      - name: app
-        resources:
-          requests:
-            cpu: "250m"
-            memory: "256Mi"
-          limits:
-            cpu: "500m"
-            memory: "512Mi"
+        - name: app
+          resources:
+            requests:
+              cpu: '250m'
+              memory: '256Mi'
+            limits:
+              cpu: '500m'
+              memory: '512Mi'

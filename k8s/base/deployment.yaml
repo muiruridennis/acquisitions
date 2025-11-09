@@ -10,7 +10,7 @@ metadata:
   labels:
     app: acquisitions-app
 spec:
-  replicas: 2  # Overlays can reduce this for local
+  replicas: 2 # Overlays can reduce this for local
   selector:
     matchLabels:
       app: acquisitions-app
@@ -20,13 +20,13 @@ spec:
         app: acquisitions-app
     spec:
       securityContext:
-        runAsUser: 1001        # match non-root user in Dockerfile
+        runAsUser: 1001 # match non-root user in Dockerfile
         runAsGroup: 1001
         runAsNonRoot: true
       containers:
         - name: app
           image: muiruridennis/acquisitions:latest
-          imagePullPolicy: IfNotPresent  # overlays may set Always for prod
+          imagePullPolicy: IfNotPresent # overlays may set Always for prod
           ports:
             - containerPort: 3000
               name: http
@@ -54,11 +54,11 @@ spec:
             failureThreshold: 3
           resources:
             requests:
-              cpu: "250m"
-              memory: "256Mi"
+              cpu: '250m'
+              memory: '256Mi'
             limits:
-              cpu: "500m"
-              memory: "512Mi"
+              cpu: '500m'
+              memory: '512Mi'
           volumeMounts:
             - name: logs
               mountPath: /app/logs

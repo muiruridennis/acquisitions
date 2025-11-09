@@ -25,7 +25,7 @@ patches:
   # Ensure service exposes 80 -> 3000 (ClusterIP)
   - target:
       kind: Service
-      name: acquisitions-app  
+      name: acquisitions-app
     path: service-patch.yaml
   # Switch to development/debug settings
   - target:
