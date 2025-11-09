@@ -1,0 +1,11 @@
+# PVC for storing application logs on persistent storage
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  name: acquisitions-logs
+spec:
+  accessModes:
+    - ReadWriteOnce
+  resources:
+    requests:
+      storage: 1Gi

@@ -1,0 +1,68 @@
+# Base Deployment for acquisitions-app
+# - Default replicas and probes suitable for production
+# - Security: run as non-root uid/gid 1001
+# - Env: pulled from ConfigMap + Secret
+# - Volumes: persistent logs
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: acquisitions-app
+  labels:
+    app: acquisitions-app
+spec:
+  replicas: 2  # Overlays can reduce this for local
+  selector:
+    matchLabels:
+      app: acquisitions-app
+  template:
+    metadata:
+      labels:
+        app: acquisitions-app
+    spec:
+      securityContext:
+        runAsUser: 1001        # match non-root user in Dockerfile
+        runAsGroup: 1001
+        runAsNonRoot: true
+      containers:
+        - name: app
+          image: muiruridennis/acquisitions:latest
+          imagePullPolicy: IfNotPresent  # overlays may set Always for prod
+          ports:
+            - containerPort: 3000
+              name: http
+          envFrom:
+            - configMapRef:
+                name: acquisitions-app-config
+            - secretRef:
+                name: acquisitions-app-secret
+          # HTTP /health endpoint used by probes
+          livenessProbe:
+            httpGet:
+              path: /health
+              port: http
+            initialDelaySeconds: 30
+            periodSeconds: 15
+            timeoutSeconds: 5
+            failureThreshold: 3
+          readinessProbe:
+            httpGet:
+              path: /health
+              port: http
+            initialDelaySeconds: 10
+            periodSeconds: 10
+            timeoutSeconds: 3
+            failureThreshold: 3
+          resources:
+            requests:
+              cpu: "250m"
+              memory: "256Mi"
+            limits:
+              cpu: "500m"
+              memory: "512Mi"
+          volumeMounts:
+            - name: logs
+              mountPath: /app/logs
+      volumes:
+        - name: logs
+          persistentVolumeClaim:
+            claimName: acquisitions-logs

@@ -1,0 +1,16 @@
+title = "gitleaks config for acquisitions"
+
+[extend]
+# Use built-in gitleaks rules and only add allowlists below
+
+[allowlist]
+  description = "allow benign local/test values"
+  regexes = [
+    "ajkey_local_dev",                                 # local dev key placeholder
+    "REPLACE_WITH_PROD_DATABASE_URL",                 # base secret placeholder
+    "REPLACE_WITH_ARCJET_KEY",                        # base secret placeholder
+    "postgres://neon:neon@neon-local:5432/neondb",    # local DB URI
+  ]
+  paths = [
+    "k8s/overlays/local/secret-local.yaml",           # local-only secret values
+  ]

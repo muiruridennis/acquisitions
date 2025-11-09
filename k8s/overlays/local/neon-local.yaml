@@ -1,0 +1,51 @@
+# Local Neon database proxy (Deployment + Service)
+# Requires Secret 'neon-local-secret' with NEON_PROJECT_ID and NEON_API_KEY
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: neon-local
+  labels:
+    app: neon-local
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: neon-local
+  template:
+    metadata:
+      labels:
+        app: neon-local
+    spec:
+      containers:
+        - name: neon-local
+          image: neondatabase/neon_local:latest
+          ports:
+            - containerPort: 5432
+          # Read credentials from Kubernetes Secret created by scripts/create-secrets.ps1
+          envFrom:
+            - secretRef:
+                name: neon-local-secret
+          # Simple TCP probes to verify 5432 is accepting connections
+          readinessProbe:
+            tcpSocket:
+              port: 5432
+            initialDelaySeconds: 5
+            periodSeconds: 5
+          livenessProbe:
+            tcpSocket:
+              port: 5432
+            initialDelaySeconds: 10
+            periodSeconds: 10
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: neon-local
+  labels:
+    app: neon-local
+spec:
+  selector:
+    app: neon-local
+  ports:
+    - port: 5432
+      targetPort: 5432

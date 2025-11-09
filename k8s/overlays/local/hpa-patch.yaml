@@ -1,0 +1,8 @@
+# Keep HPA present but pinned to 1 replica in local to avoid metrics dependency
+apiVersion: autoscaling/v2
+kind: HorizontalPodAutoscaler
+metadata:
+  name: acquisitions-app
+spec:
+  minReplicas: 1
+  maxReplicas: 1

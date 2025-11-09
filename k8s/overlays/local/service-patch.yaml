@@ -1,0 +1,11 @@
+# Keep a simple ClusterIP service mapping 80 -> 3000 for local cluster access
+apiVersion: v1
+kind: Service
+metadata:
+  name: acquisitions-app
+spec:
+  type: ClusterIP
+  ports:
+    - name: http
+      port: 80
+      targetPort: 3000

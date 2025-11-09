@@ -1,0 +1,15 @@
+# Base manifests for acquisitions-app
+# - Shared across environments (local, prod) via Kustomize overlays
+# - Keep environment-specific values out of this layer
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+resources:
+  - namespace.yaml        # Namespace (overlays may rewrite its name)
+  - configmap.yaml        # Non-sensitive defaults (PORT, NODE_ENV, LOG_LEVEL)
+  - secret.yaml           # Sensitive values (placeholders here; overlays/ops must provide real ones)
+  - pvc-logs.yaml         # Persistent storage for app logs
+  - deployment.yaml       # Core Deployment spec (probes, security, volumes)
+  - service.yaml          # ClusterIP Service exposing port 80 -> app:3000
+  - hpa.yaml              # Horizontal Pod Autoscaler defaults
+  # Ingress is optional at base; overlays can include it when needed
+  # - ingress.yaml

@@ -1,0 +1,8 @@
+# Switch app configuration to development mode with verbose logging
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: acquisitions-app-config
+data:
+  NODE_ENV: "development"
+  LOG_LEVEL: "debug"

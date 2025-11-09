@@ -1,0 +1,12 @@
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+namespace: acquisitions
+resources:
+  - ../../base
+  - ingress-prod.yaml
+patches:
+  - path: deployment-patch.yaml
+images:
+  - name: muiruridennis/acquisitions
+    newName: muiruridennis/acquisitions
+    newTag: latest

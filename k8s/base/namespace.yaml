@@ -1,0 +1,5 @@
+# Base namespace; overlays may rewrite the name (e.g., acquisitions-local)
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: acquisitions

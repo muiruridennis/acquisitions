@@ -6,3 +6,21 @@ node_modules/
 .env.*
 !.env.example
 .neon_local/
+
+# local artifacts and logs
+logs/
+*.log
+npm-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# build output / coverage
+dist/
+build/
+coverage/
+
+# editors / OS files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db

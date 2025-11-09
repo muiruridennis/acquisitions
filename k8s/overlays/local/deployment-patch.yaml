@@ -1,0 +1,20 @@
+# Local-only adjustments for the app Deployment
+# - Single replica
+# - Higher memory to avoid OOMKills in dev
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: acquisitions-app
+spec:
+  replicas: 1  # Only 1 replica locally
+  template:
+    spec:
+      containers:
+      - name: app
+        resources:
+          requests:
+            cpu: "250m"
+            memory: "256Mi"
+          limits:
+            cpu: "500m"
+            memory: "512Mi"

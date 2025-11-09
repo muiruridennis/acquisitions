@@ -1,0 +1,25 @@
+#!/usr/bin/env bash
+# Pre-commit hook: scan staged changes for secrets using gitleaks
+# Enable with: git config core.hooksPath scripts/git-hooks
+
+set -euo pipefail
+
+if ! command -v gitleaks >/dev/null 2>&1; then
+  echo "[pre-commit] gitleaks not found; skipping secret scan (install from https://github.com/gitleaks/gitleaks/releases)." >&2
+  exit 0
+fi
+
+# Use repo config if present
+CONFIG_FILE=".gitleaks.toml"
+CONFIG_ARG=( )
+if [ -f "$CONFIG_FILE" ]; then
+  CONFIG_ARG=("--config" "$CONFIG_FILE")
+fi
+
+# Scan staged changes only; redact output to avoid printing secrets
+if ! gitleaks protect --staged --no-banner --redact "${CONFIG_ARG[@]}"; then
+  echo "\n[pre-commit] Secret scan failed. Review findings above. To bypass intentionally, use: git commit --no-verify" >&2
+  exit 1
+fi
+
+exit 0

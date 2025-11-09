@@ -1,0 +1,49 @@
+# Local development overlay for acquisitions-app
+# - Sets namespace to 'acquisitions-local'
+# - Pulls in base manifests and adds local-only resources
+# - Applies patches to tune for local dev
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+
+# All generated resources will be placed in this namespace (and base namespace is rewritten)
+namespace: acquisitions-local
+
+resources:
+  # Shared/base manifests (Deployment, Service, PVC, ConfigMap, Secret, HPA)
+  - ../../base
+  # Local-only ingress hostname (acquisitions.local)
+  - ingress-local.yaml
+  # Local Neon DB proxy (Deployment + Service)
+  - neon-local.yaml
+
+patches:
+  # Reduce replicas and bump resources for the app container (avoid OOMs locally)
+  - target:
+      kind: Deployment
+      name: acquisitions-app
+    path: deployment-patch.yaml
+  # Ensure service exposes 80 -> 3000 (ClusterIP)
+  - target:
+      kind: Service
+      name: acquisitions-app  
+    path: service-patch.yaml
+  # Switch to development/debug settings
+  - target:
+      kind: ConfigMap
+      name: acquisitions-app-config
+    path: configmap-patch.yaml
+  # Keep HPA present but pinned to 1 replica for simplicity
+  - target:
+      kind: HorizontalPodAutoscaler
+      name: acquisitions-app
+    path: hpa-patch.yaml
+  # Override app secret with safe local defaults
+  - target:
+      kind: Secret
+      name: acquisitions-app-secret
+    path: secret-local.yaml
+
+images:
+  # Use the locally built image tag
+  - name: muiruridennis/acquisitions
+    newTag: latest

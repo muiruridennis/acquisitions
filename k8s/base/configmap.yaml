@@ -1,0 +1,10 @@
+# Non-sensitive defaults for the application
+# Overlays can override values (e.g., development/debug locally)
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: acquisitions-app-config
+data:
+  PORT: "3000"
+  NODE_ENV: "production"
+  LOG_LEVEL: "info"

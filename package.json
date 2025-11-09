@@ -31,7 +31,9 @@
     "dev:dockerr": "sh ./scripts/dev.sh",
     "prod:docker": "sh ./scripts/prod.sh",
     "dev:docker": "powershell -ExecutionPolicy Bypass -File ./scripts/dev.ps1",
-    "test": "cross-env NODE_OPTIONS=--experimental-vm-modules jest"
+    "test": "cross-env NODE_OPTIONS=--experimental-vm-modules jest",
+    "deploy:ps": "cross-env powershell -ExecutionPolicy Bypass -File ./scripts/deploy-local.ps1 -Local"
+
   },
   "keywords": [],
   "type": "module",
